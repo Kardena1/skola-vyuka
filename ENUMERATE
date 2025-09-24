@@ -1,0 +1,24 @@
+Projdi uvedený list jmen měst a vypiš vždy index města a název města (indexy začínají od 0). U města, jehož index uživatel zadal, přidej ještě nápis "Vybráno".
+
+Pokud uživatel zadá číslo, které neodpovídá žádnému indexu vypiš zprávu: Chybný vstup
+
+
+muj_list = [
+    "Ostrava",
+    "Kladno",
+    "Praha",
+    "Liberec",
+    "Opava",
+    "Ceske Budejovice",
+    "Litomerice"
+]
+
+vstup = int(input("Zadejte index mesta: "))
+if vstup <= -1 or vstup >= 7:
+  print("Spatny vstup")
+else:
+  for i, mesto in enumerate(muj_list):
+    if i == vstup:
+      print(i,". mesto:", mesto, "- Vybrano")
+    else:
+      print(i,". mesto:", mesto)
