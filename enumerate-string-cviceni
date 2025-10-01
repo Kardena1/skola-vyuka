@@ -1,0 +1,24 @@
+seznam =["karel", "london", "bazos"]
+vypis = "obsahuje tato jmena:"
+
+for i, jmeno in enumerate(seznam):
+  if(len(seznam)-1 > i):
+    vypis+=jmeno+", "
+  else:
+    vypis+=jmeno
+print(vypis)
+
+
+retezec_1 = "Toto"
+retezec_2 = "je"
+retezec_3 = "spojený"
+retezec_4 = "řetězec"
+
+spojeny_retezec = retezec_1 + " " + retezec_2 + " " + retezec_3 + " " + retezec_4
+
+
+# Prázdné uvozovky s mezerami vkládáme pouze pro oddělení slov mezerou
+# Kdybychom tak neudělali text by vypadal takto
+
+spojeny_retezec = retezec_1 + retezec_2 + retezec_3 + retezec_4
+
