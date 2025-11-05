@@ -1,1 +1,19 @@
 Content from SPSKLADNO
+
+Recommended order is:
+
+Zaklady_Pythonu_a_programovani_zadani.ipynb
+Datove_typy_Zakladni_operatory_zadani.ipynb
+Vetveni_zadani.ipynb
+Logicke_funkce_zadani.ipynb
+For_zadani.ipynb
+String_zadani.ipynb
+Vyctove_datove_typy_zadani.ipynb
+While_zadani.ipynb
+Break_Continue_zadani.ipynb
+Funkce_zadani.ipynb
+Vyjimky_zadani.ipynb
+Soubory_zadani.ipynb
+OOP_trida_objekt_atribut_metoda_zadani.ipynb
+OOP_zapouzdreni_zadani.ipynb
+OOP_Dedicnost_zadani.ipynb
