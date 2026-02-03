@@ -77,7 +77,7 @@ app = QtWidgets.QApplication([])
 
 hlavni_okno = QtWidgets.QWidget()
 hlavni_okno.setWindowTitle('Cviceni')
-hlavni_okno.setFixedSize(8W00,600)
+hlavni_okno.setFixedSize(800,600)
 
 usporadani = QtWidgets.QHBoxLayout()
 hlavni_okno.setLayout(usporadani)
