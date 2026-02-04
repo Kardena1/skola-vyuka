@@ -82,11 +82,66 @@
 
 # Po kliknuti: https://camo.githubusercontent.com/710904913d6e75e7f07fe710e7683347f5e5f2ff97c5df69a907e10f768d999a/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4a61726f736c6176486f6c6563656b2f5465616368696e672f6d61737465722f4a7570797465724e6f7465626f6f6b2f507951742f696d616765732f696d675f6f6b6e6f5f746c616369746b6f5f706f5f7a6d656e655f6e6164706973752e504e47
 
-from PyQt5 import QtWidgets
+# from PyQt5 import QtWidgets
 
-app = QtWidgets.QApplication
+# def zmackni_button():
+#     novy_nazev = "Novy nazev okna"
+#     hlavni_okno.setWindowTitle(novy_nazev)
 
-hlavni_okno = QtWidgets.QWidget()
-hlavni_okno.setWindowTitle('hlavni okno')
-hlavni_okno.setFixedSize(800,600)
-# TODO: Zde přijde váš kód ->
+# app = QtWidgets.QApplication([])
+
+# hlavni_okno = QtWidgets.QWidget()
+# hlavni_okno.setWindowTitle('Muj supr program')
+# hlavni_okno.setFixedSize(800,600)
+
+# usporadani = QtWidgets.QHBoxLayout()
+# hlavni_okno.setLayout(usporadani)
+
+
+# tlacitko = QtWidgets.QPushButton("klikni na me")
+# usporadani.addWidget(tlacitko)
+
+# tlacitko.clicked.connect(zmackni_button)
+
+
+# hlavni_okno.show()
+# app.exec()
+
+# TODO: Zde přijde váš kód ^
+
+
+# Cvičení 2:
+# Upravte kód tak, aby se při stisknutí tlačítka změnil text na jeden náhodně vybraný z 5 textů (texty si vymyslete Vy).
+
+# Pro náhodný výběr použijte funkci choice z knihovny random
+
+
+# from PyQt5 import QtWidgets
+# import random
+
+# slov_list = ['ahoj','cau','dobry den','zdravim','hello']
+
+# app = QtWidgets.QApplication([])
+
+# hlavni_okno = QtWidgets.QWidget()
+# hlavni_okno.setWindowTitle("Můj supr program")
+
+# usporadani = QtWidgets.QHBoxLayout()
+# hlavni_okno.setLayout(usporadani)
+
+# napis = QtWidgets.QLabel("Nějaký text...")
+# usporadani.addWidget(napis)
+
+# tlacitko = QtWidgets.QPushButton("Klikni na mě")
+# usporadani.addWidget(tlacitko)
+
+# def zmen_text():
+#     nove_slovo = random.choice(slov_list)
+#     napis.setText(nove_slovo)
+
+# tlacitko.clicked.connect(zmen_text)
+
+# hlavni_okno.show()
+
+# app.exec()
+     
