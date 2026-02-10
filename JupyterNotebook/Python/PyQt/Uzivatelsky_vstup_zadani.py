@@ -89,6 +89,8 @@
 
 # app.exec()
 
+
+
 # from PyQt5 import QtWidgets
 # from PyQt5 import QtGui
 
@@ -140,44 +142,44 @@
 # Naprogramujte aplikaci, která podle zadaných vstupů buď sečte hodnoty, nebo je vynásobí.
 # Výsledek může vypadat následovně (můžete však vytvořit jakýkoukoliv podobnou).
 
-from PyQt5 import QtWidgets
-from PyQt5 import QtGui
-from PyQt5.QtGui import QPalette, QColor
-from PyQt5.QtGui import QRegularExpressionValidator
-from PyQt5.QtCore import QRegularExpression
+# from PyQt5 import QtWidgets
+# from PyQt5 import QtGui
+# from PyQt5.QtGui import QPalette, QColor
+# from PyQt5.QtGui import QRegularExpressionValidator
+# from PyQt5.QtCore import QRegularExpression
 
 
-def soucet():
-    operace = input2.text().strip()
-    if operace == "+" :
-        vstupni_text = input1.text().strip()
-        pole_souctu = vstupni_text.split(" ")
-        vysledek = 0
-        try: 
-            for prvek in pole_souctu:
-                cislo = int(prvek)
-                vysledek += cislo
-        except ValueError:
-            vysledek = "Neumim pocitat s pismenky"
+# def soucet():
+#     operace = input2.text().strip()
+#     if operace == "+" :
+#         vstupni_text = " ".join(input1.text().split())
+#         pole_souctu = vstupni_text.split(" ")
+#         vysledek = 0
+#         try: 
+#             for prvek in pole_souctu:
+#                 cislo = int(prvek)
+#                 vysledek += cislo
+#         except ValueError:
+#             vysledek = "Neumim pocitat s pismenky"
 
-        napis.setText(f"soucet je: {vysledek}")
-    elif operace == "*" :
-        vstupni_text = input1.text().strip()
-        pole_souctu = vstupni_text.split(" ")
-        vysledek = 0
-        try: 
-            #cislo=[]
-            cislo = 1   
-            for prvek in pole_souctu:
-                print(prvek)
-                #cislo.append(int(prvek))
-                cislo = cislo * int(prvek)
-            vysledek = cislo    
-        except ValueError:
-            vysledek = "Neumim pocitat s pismenky"
+#         napis.setText(f"soucet je: {vysledek}")
+#     elif operace == "*" :
+#         vstupni_text = " ".join(input1.text().split())
+#         pole_souctu = vstupni_text.split(" ")
+#         vysledek = 0
+#         try: 
+#             #cislo=[]
+#             cislo = 1   
+#             for prvek in pole_souctu:
+#                 print(prvek)
+#                 #cislo.append(int(prvek))
+#                 cislo = cislo * int(prvek)
+#             vysledek = cislo    
+#         except ValueError:
+#             vysledek = "Neumim pocitat s pismenky"
 
 
-        napis.setText(f"soucet je: {vysledek}")
+#         napis.setText(f"soucet je: {vysledek}")
 
 
     
@@ -185,47 +187,49 @@ def soucet():
 
 
 
-app = QtWidgets.QApplication([])
+# app = QtWidgets.QApplication([])
 
-hlavni_okno = QtWidgets.QWidget()
-hlavni_okno.setWindowTitle("Kalkulacka")
-hlavni_okno.setFixedSize(200,150)
-palette = hlavni_okno.palette()
-palette.setColor(QPalette.Window, QColor(100, 200, 200))
-hlavni_okno.setAutoFillBackground(True)
-hlavni_okno.setPalette(palette)
-
-
-regex = QRegularExpression("[+\*]")
-validator = QRegularExpressionValidator(regex)
-validator_celych_cisel = QtGui.QIntValidator()
+# hlavni_okno = QtWidgets.QWidget()
+# hlavni_okno.setWindowTitle("Kalkulacka")
+# hlavni_okno.setFixedSize(200,150)
+# palette = hlavni_okno.palette()
+# palette.setColor(QPalette.Window, QColor(100, 200, 200))
+# hlavni_okno.setAutoFillBackground(True)
+# hlavni_okno.setPalette(palette)
 
 
-usporadani = QtWidgets.QVBoxLayout()
-hlavni_okno.setLayout(usporadani)
-
-input1 = QtWidgets.QLineEdit()
-input1.setValidator(validator_celych_cisel)
-usporadani.addWidget(input1)
+# regex = QRegularExpression(r"[+*]")
+# validator = QRegularExpressionValidator(regex)
+# regex_cisel = QRegularExpression(r"^-?\d+(?:\s+-?\d+)*$")
+# validator_cisel = QRegularExpressionValidator(regex_cisel)
 
 
-input2 = QtWidgets.QLineEdit()
-input2.setValidator(validator)
-input2.setMaxLength(1)
-usporadani.addWidget(input2)
+# usporadani = QtWidgets.QVBoxLayout()
+# hlavni_okno.setLayout(usporadani)
 
-tlacitko = QtWidgets.QPushButton("Klikni na me")
-usporadani.addWidget(tlacitko)
-
-napis = QtWidgets.QLabel("Vysledek je:")
-usporadani.addWidget(napis)
+# input1 = QtWidgets.QLineEdit()
+# input1.setValidator(validator_cisel)
+# usporadani.addWidget(input1)
 
 
-tlacitko.clicked.connect(soucet)
+# input2 = QtWidgets.QLineEdit()
+# input2.setValidator(validator)
+# input2.setMaxLength(1)
+# usporadani.addWidget(input2)
+
+# tlacitko = QtWidgets.QPushButton("Klikni na me")
+# usporadani.addWidget(tlacitko)
+
+# napis = QtWidgets.QLabel("Vysledek je:")
+# usporadani.addWidget(napis)
+
+
+# tlacitko.clicked.connect(soucet)
 
 
 
 
-hlavni_okno.show()
+# hlavni_okno.show()
 
-app.exec()
+# app.exec()
+
